@@ -11,7 +11,7 @@ Password:
 aws eks --region ap-south-1 update-kubeconfig --name argocd-cluster
 kubectl config current-context
 
-install argocd cli
+install argocd cli(https://github.com/argoproj/argo-cd/releases/)
 
 argocd cluster add arn:aws:eks:us-east-1:020930354342:cluster/argocd-cluster
 
