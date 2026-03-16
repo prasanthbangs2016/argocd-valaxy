@@ -1,5 +1,7 @@
 ## Application installation
 
+Run below steps in terminal
+
 ```
 
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d; echo
@@ -11,8 +13,8 @@ Password:
 aws eks --region ap-south-1 update-kubeconfig --name argocd-cluster
 kubectl config current-context
 
-install argocd cli(https://github.com/argoproj/argo-cd/releases/)
 
+#adding cluster to argocd
 argocd cluster add arn:aws:eks:us-east-1:020930354342:cluster/argocd-cluster
 
 
