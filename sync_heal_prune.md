@@ -1,3 +1,3 @@
 ```
-kubectl scale deploy guestbook --replicas=1 -n guestbook
+ kubectl scale deployment guestbook-ui --replicas=3 -n default
 ```
